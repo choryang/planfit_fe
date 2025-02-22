@@ -1,12 +1,19 @@
+import FeedBox from "../../../../components/best/FeedBox";
+import { post } from "../../../../interface/interface";
 import { ContentContainer } from "../../../../styles/bestTab/BestTab"
+import { useLoaderData } from "react-router-dom"
 
 function BestTab() {
 
-  return (
-    <ContentContainer>
-     BestTab
-    </ContentContainer>
-  )
+    const posts = useLoaderData().data;
+
+    return (
+        <ContentContainer>
+            {posts.map((post: post) => {
+                return <FeedBox {...post} />
+            })}
+        </ContentContainer>
+    )
 }
 
 export default BestTab

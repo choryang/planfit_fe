@@ -4,7 +4,7 @@ interface ITopAppBarProps {
     [key: string]: string
 }
 
-const TopAppBar = (props: ITopAppBarProps) => {
+function TopAppBar(props: ITopAppBarProps) {
     return (    
         <TopAppBarContainer>
             {props.title}
