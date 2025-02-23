@@ -18,11 +18,15 @@ const GlobalStyle = createGlobalStyle`
         max-width: 100%;
         height: auto; 
         background-repeat: no-repeat; 
-        background-size: cover;
     }
 
     input, button, textarea, select{
         font: inherit; 
+        border: none;
+
+        &:focus, &:active {     
+            outline: none;
+        }
     }
 
     body, html{

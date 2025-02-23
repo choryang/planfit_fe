@@ -12,6 +12,9 @@ function PostCard(props: post) {
     const handleClickLike = () => {
         navigate(`/best/detail/${props.id}/likes`, {state: {post_id: props.id}});
     }
+    const handleClickComment = () => {
+        navigate(`/best/detail/${props.id}/comments`, {state: {post_id: props.id}});
+    }
 
     return (
         <PostWrapper>
@@ -31,7 +34,7 @@ function PostCard(props: post) {
             <img onClick={handleClick} src={props.image} alt="post image"/>
             <PostReactionBox>
                 <button onClick={handleClickLike}>{props.like === 0 ? "처음으로 박수를 보내보세요!" : `${props.like}명이 박수를 보냈어요`}</button>
-                <button>댓글 <span>{props.comment}</span>개</button>
+                <button onClick={handleClickComment}>댓글 <span>{props.comment}</span>개</button>
             </PostReactionBox>
             <PostReactionBtnBox>
                 <button><img src="/ic-hands-clap.png" alt="like"/></button>

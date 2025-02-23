@@ -9,6 +9,7 @@ export const FeedWrapper = styled.div`
 
 export const FeedImage = styled.img`
     width: 164px;
+    max-height: 250px;
     border-radius: 10px;
     margin-bottom: 4px;
 `
