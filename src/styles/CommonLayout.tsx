@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const CommonLayout = styled.div`
     width: 375px;
-    height: 812px;
+    height: 816px;
     padding-top: 45px;
     background-color: #1E2024;
     color: #FFFFFF;

@@ -20,7 +20,7 @@ const router = createBrowserRouter([
             children: [
                 {   
                     path: "/",
-                    element: <FollowingTab />,
+                    element: <BestTab />,
                 },
                 {   
                     path: "/following",

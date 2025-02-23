@@ -6,7 +6,7 @@ interface UserStore {
 }
 
 const useUserStore = create<UserStore>((set) => ({
-  current_user_id: 0,
+  current_user_id: 9,
   setCurrentUserId: (id) => set({ current_user_id: id }),
 }));
 

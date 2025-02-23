@@ -7,6 +7,7 @@ export const PostCardsContainer = styled.div`
     align-items: center;
     margin-top: 20px;
     height: 708px;
+    padding-bottom: 20px;
     overflow-y: scroll;
 `
 

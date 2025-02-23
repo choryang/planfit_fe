@@ -1,11 +1,39 @@
 import styled from "styled-components";
 
 export const CommentBox = styled.div`
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
+    padding: 32px 16px 0;
+
+    & > div {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 33px;
+        letter-spacing: 0;
+
+        & > span {
+            color: #D0D2D7;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22.4px;
+            letter-spacing: 0;
+        }
+    }
+`
+
+export const CommentList = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     padding-top: 32px;
+    gap: 30px;
+    height: 680px;
+    padding-bottom: 132px;
+    overflow-y: scroll;
 `
 
 export const CommentInputBox = styled.div`

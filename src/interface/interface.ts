@@ -1,6 +1,14 @@
 export interface post {
     [key: string]: string | number
+    id: number
+    title: string
+    content: string
+    user_id: number
+    like: number
+    commnet: number
     image: string
+    created_at_date: string
+    created_at_time: string
 }
 
 export interface comment {

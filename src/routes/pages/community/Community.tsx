@@ -12,7 +12,7 @@ function Community() {
         {id: 2, title: "클럽", path: "club"},
     ]
 
-    const [activeTab, setActiveTab] = useState(tabMenu[0].id);
+    const [activeTab, setActiveTab] = useState(tabMenu[1].id);
     const navigate = useNavigate();
 
     const handleTabClick = (id: number, path: string) => {

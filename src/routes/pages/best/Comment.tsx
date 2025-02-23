@@ -1,6 +1,6 @@
-import { useLoaderData, useLocation, useNavigate, useParams } from "react-router-dom";
+import { useLoaderData, useLocation } from "react-router-dom";
 import { BottomSheet } from "../../../styles/BottomSheet"
-import { CommentBox, CommentInput, CommentInputBox, EmojiBox, EmojiButton } from "../../../styles/comment/Comment"
+import { CommentBox, CommentInput, CommentInputBox, CommentList, EmojiBox, EmojiButton } from "../../../styles/comment/Comment"
 import { useEffect, useState } from "react";
 import { comment } from "../../../interface/interface";
 import useCommentStore from "../../../store/commentStore";
@@ -28,17 +28,15 @@ function Comment() {
 
     }, [commentList])
     
-        
-    console.log(list);
     
     const emojis = ["💪", "🔥", "🥳", "👏", "🥊", "🎉", "💣"];
     const [commentValue, setCommentValue] = useState("");
 
-    const handleInputChange = (e: { target: { value: string }; }) => {
+    const handleInputChange = (e: { target: { value: string } }) => {
         setCommentValue(e.target.value);
     }
 
-    const handleEmojiClick = (e: { currentTarget: { innerText: string; }; }) => {
+    const handleEmojiClick = (e: { currentTarget: { innerText: string } }) => {
         const addEmoji = commentValue.concat(e.currentTarget.innerText);
         setCommentValue(addEmoji);
     }
@@ -57,6 +55,7 @@ function Comment() {
         const newList = [...commentList];
         newList.push(newComment);
         setCommentList(newList);
+        setCommentValue("")
     }
 
     return (
@@ -64,11 +63,13 @@ function Comment() {
             <BottomSheet>
                 <CommentBox>
                     <div>
-                        <span>댓글 {list.length}</span>
+                        댓글 <span>{list.length}</span>
                     </div>
-                    {list.map((comment) => {
-                        return <CommentItem {...comment} />
-                    })}
+                    <CommentList>
+                        {list.map((comment) => {
+                            return <CommentItem {...comment} />
+                        })}
+                    </CommentList>
                 </CommentBox>
                 <CommentInputBox>
                     <EmojiBox>
