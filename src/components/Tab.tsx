@@ -1,4 +1,4 @@
-import { TabButton } from "../styles/Tab";
+import { TabButton } from "@/styles/Tab";
 
 interface ITabProps {
     title: string,

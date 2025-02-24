@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { post } from "../interface/interface";
+import { post } from "@/interface/interface";
 
 interface PostStore {
     postList: post[]

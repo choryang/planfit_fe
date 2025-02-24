@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import {MemoizedFeedBox} from "../../../../components/best/FeedBox";
-import { post } from "../../../../interface/interface";
-import { ContentContainer } from "../../../../styles/bestTab/BestTab"
+import {MemoizedFeedBox} from "@/components/best/FeedBox";
+import { post } from "@/interface/interface";
+import { ContentContainer } from "@/styles/bestTab/BestTab"
 import { useLoaderData } from "react-router-dom"
 import { useInView } from "react-intersection-observer";
 

@@ -21,6 +21,7 @@ const router = createBrowserRouter([
                 {   
                     path: "/",
                     element: <BestTab />,
+                    loader: postLoader(queryClient)
                 },
                 {   
                     path: "/following",

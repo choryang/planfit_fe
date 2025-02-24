@@ -1,5 +1,5 @@
-import { comment } from "../../../interface/interface"
-import { CommentContent, CommentContentBox, CommentCreateAt, CommentItemBox, CommentLike, CommentLikeBtn, CommentReactionBox, CommentUserInfo, CommentUserName } from "../../../styles/comment/CommentItem"
+import { comment } from "@/interface/interface"
+import { CommentContent, CommentContentBox, CommentCreateAt, CommentItemBox, CommentLike, CommentLikeBtn, CommentReactionBox, CommentUserInfo, CommentUserName } from "@/styles/comment/CommentItem"
 
 function CommentItem(props: comment) {
     return (

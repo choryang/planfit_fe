@@ -1,11 +1,11 @@
 import { useLoaderData, useLocation } from "react-router-dom";
-import { BottomSheet } from "../../../styles/BottomSheet"
-import { CommentBox, CommentInput, CommentInputBox, CommentList, EmojiBox, EmojiButton } from "../../../styles/comment/Comment"
+import { BottomSheet } from "@/styles/BottomSheet"
+import { CommentBox, CommentInput, CommentInputBox, CommentList, EmojiBox, EmojiButton } from "@/styles/comment/Comment"
 import { useEffect, useState } from "react";
-import { comment } from "../../../interface/interface";
-import useCommentStore from "../../../store/commentStore";
-import useUserStore from "../../../store/userStore";
-import CommentItem from "./CommentItem";
+import { comment } from "@/interface/interface";
+import useCommentStore from "@/store/commentStore";
+import useUserStore from "@/store/userStore";
+import CommentItem from "@/components/CommentItem";
 
 function Comment() {
 

@@ -1,6 +1,6 @@
-import { user } from "../../interface/interface"
-import { UserItemProfile, UserItemWrapper } from "../../styles/UserListItem"
-import { FollowButton } from "../FollowButton"
+import { user } from "@/interface/interface"
+import { UserItemProfile, UserItemWrapper } from "@/styles/UserListItem"
+import { FollowButton } from "@/styles/FollowButton"
 
 
 function UserListItem(props: user) {

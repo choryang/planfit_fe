@@ -1,8 +1,8 @@
 import { useLoaderData, useLocation } from "react-router-dom";
-import TitleBar from "../../../components/TitleBar"
-import {MemoizedPostCard} from "../../../components/best/PostCard";
-import { post } from "../../../interface/interface";
-import { PostCardsContainer } from "../../../styles/bestTab/PostCard";
+import TitleBar from "@/components/TitleBar"
+import {MemoizedPostCard} from "@/components/best/PostCard";
+import { post } from "@/interface/interface";
+import { PostCardsContainer } from "@/styles/bestTab/PostCard";
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 

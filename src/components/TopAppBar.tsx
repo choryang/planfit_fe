@@ -1,4 +1,4 @@
-import { ControlBtn, TopAppBarContainer, TopBarControl } from "../styles/TopAppBar";
+import { ControlBtn, TopAppBarContainer, TopBarControl } from "@/styles/TopAppBar";
 
 interface ITopAppBarProps {
     [key: string]: string

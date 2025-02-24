@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
-import { TitleBarWrapper } from "../styles/TitleBar";
-import { ITitle } from "../interface/interface";
+import { TitleBarWrapper } from "@/styles/TitleBar";
+import { ITitle } from "@/interface/interface";
 
 function TitleBar(props: ITitle) {
 

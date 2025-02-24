@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { comment } from "../interface/interface";
+import { comment } from "@/interface/interface";
 
 interface CommentStore {
     commentList: comment[]

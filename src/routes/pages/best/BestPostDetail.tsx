@@ -1,7 +1,7 @@
 import { useLocation } from "react-router-dom"
-import TitleBar from "../../../components/TitleBar"
-import { PostCardsContainer } from "../../../styles/bestTab/PostCard";
-import {MemoizedPostCard} from "../../../components/best/PostCard";
+import TitleBar from "@/components/TitleBar"
+import { PostCardsContainer } from "@/styles/bestTab/PostCard";
+import {MemoizedPostCard} from "@/components/best/PostCard";
 
 function BestPostDetail() {
 

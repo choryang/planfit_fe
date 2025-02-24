@@ -1,10 +1,10 @@
 import { useNavigate } from "react-router-dom"
-import { post } from "../../interface/interface"
-import { FeedImage, FeedInfoBox, FeedReactionBox, FeedReactionIcon, FeedTitle, FeedWrapper } from "../../styles/bestTab/FeedBox"
+import { post } from "@/interface/interface"
+import { FeedImage, FeedInfoBox, FeedReactionBox, FeedReactionIcon, FeedTitle, FeedWrapper } from "@/styles/bestTab/FeedBox"
 import React, { useEffect, useState }  from "react";
-import useLikeStore from "../../store/likeStore";
-import useUserStore from "../../store/userStore";
-import client from "../../utils/axios";
+import useLikeStore from "@/store/likeStore";
+import useUserStore from "@/store/userStore";
+import client from "@/utils/axios";
 
 
 function FeedBox(props: post) {

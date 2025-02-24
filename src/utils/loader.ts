@@ -1,5 +1,5 @@
 import { QueryClient } from "@tanstack/query-core";
-import client from "./axios";
+import client from "@/utils/axios";
 
 export const queryClient = new QueryClient({
   defaultOptions: {

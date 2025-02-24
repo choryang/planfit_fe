@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { like } from "../interface/interface";
+import { like } from "@/interface/interface";
 
 interface LikeStore {
     likes: like[]

@@ -1,11 +1,11 @@
 import { useLocation, useNavigate } from "react-router-dom"
-import { post } from "../../interface/interface"
-import { CreatedAt, PostReactionBox, PostReactionBtnBox, PostTop, PostUserInfo, PostWrapper, UserId, UserProfile } from "../../styles/bestTab/PostCard"
-import { FollowButton } from "../FollowButton"
+import { post } from "@/interface/interface"
+import { CreatedAt, PostReactionBox, PostReactionBtnBox, PostTop, PostUserInfo, PostWrapper, UserId, UserProfile } from "@/styles/bestTab/PostCard"
+import { FollowButton } from "@/styles/FollowButton"
 import React, { useEffect, useState } from "react";
-import client from "../../utils/axios";
-import useLikeStore from "../../store/likeStore";
-import useUserStore from "../../store/userStore";
+import client from "@/utils/axios";
+import useLikeStore from "@/store/likeStore";
+import useUserStore from "@/store/userStore";
 
 function PostCard(props: post) {
 

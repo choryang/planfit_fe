@@ -1,7 +1,7 @@
 import { Outlet, useNavigate } from "react-router-dom"
-import TopAppBar from "../../../components/TopAppBar"
-import { TabBox } from "../../../styles/Tab"
-import Tab from "../../../components/Tab"
+import TopAppBar from "@/components/TopAppBar"
+import { TabBox } from "@/styles/Tab"
+import Tab from "@/components/Tab"
 import { useState } from "react"
 
 function Community() {
